@@ -44,7 +44,7 @@ if((runMinutes % 5) == 0)
 
   // Make a HTTP request:  
   String APIRequest;
-  APIRequest = String(serverName) + "/pushingbox?devid=" + String(devid) + fullTime;
+  APIRequest = String(serverName) + "/pushingbox?devid=" + String(devid)+ "&IDtag=100&TimeStamp=50&TempC=" + fullTime;
   client.get (APIRequest);
   
   // if there are incoming bytes available
